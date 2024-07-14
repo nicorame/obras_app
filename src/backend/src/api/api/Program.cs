@@ -1,5 +1,12 @@
 using System.Text;
+using api.Data;
+using api.Interface;
+using api.Interface.Service;
+using api.Mappings;
+using api.Repositories;
+using api.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
@@ -30,6 +37,19 @@ builder.Services.AddSwaggerGen(options =>
         }
     });
 });
+
+builder.Services.AddDbContext<ContextDb>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConexionBd"));
+});
+
+builder.Services.AddScoped<IRepositoryUno, RepositoryUno>();
+builder.Services.AddScoped<IRepositoryDos, RepositoryDos>();
+
+builder.Services.AddScoped<IServiceUno, ServiceUno>();
+builder.Services.AddScoped<IServiceDos, ServiceDos>();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
