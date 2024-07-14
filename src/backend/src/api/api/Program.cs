@@ -49,6 +49,9 @@ builder.Services.AddScoped<IRepositoryDos, RepositoryDos>();
 builder.Services.AddScoped<IServiceUno, ServiceUno>();
 builder.Services.AddScoped<IServiceDos, ServiceDos>();
 
+builder.Services.AddScoped<ILoginRepository, LoginRepository>();
+builder.Services.AddScoped<ILoginService, LoginService>();
+
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
