@@ -32,10 +32,28 @@ nav {
     font-size: 28px;
     transition: 300ms;
     border-radius: 24px;
+    border-color: #b300b3;
 }
 
 .btn:hover {
     background-color: #b300b3;
     transform: scale(1.1);
     box-shadow: 0px 2px 4px #FFF;
+    border-color: #b300b3;
+}
+
+#btnAsignar {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+#btnAsignar:hover {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#h1IdObra {
+    font-size: 34px;
 }
