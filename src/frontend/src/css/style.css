@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: black;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 71px;
+    color: #cd02cd;
+}
+
+nav {
+    box-shadow: 2px 2px 2px 2px #e1e1e1;
+}
+
+.form-control {
+    padding: 10px;
+}
+
+.form-control::placeholder {
+    color: #b300b3;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #b300b3;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 300ms;
+    border-radius: 24px;
+}
+
+.btn:hover {
+    background-color: #b300b3;
+    transform: scale(1.1);
+    box-shadow: 0px 2px 4px #FFF;
+}

@@ -8,4 +8,5 @@ public interface IRepositoryUno
     Task<socio> GetById(Guid id);
     Task<List<socio>> GetAllSocios();
     Task<deporte> GetDeporteById(Guid id);
+    Task<List<deporte>> GetAllDeportes();
 }

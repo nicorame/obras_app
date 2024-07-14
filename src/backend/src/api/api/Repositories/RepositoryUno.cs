@@ -45,4 +45,10 @@ public class RepositoryUno : IRepositoryUno
             .FirstOrDefaultAsync(d => d.Id == id);
         return deporte;
     }
+
+    public async Task<List<deporte>> GetAllDeportes()
+    {
+        var deportes = await _contextDb.deportes.ToListAsync();
+        return deportes;
+    }
 }

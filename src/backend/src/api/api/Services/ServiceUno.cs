@@ -81,4 +81,16 @@ public class ServiceUno : IServiceUno
         response.Data = _mapper.Map<SociosDto>(nuevoSocio);
         return response;
     }
+
+    public async Task<ApiResponse<List<DeportesDto>>> GetAllDeportes()
+    {
+        var response = new ApiResponse<List<DeportesDto>>();
+        var deportes = await _repositoryUno.GetAllDeportes();
+        if (deportes != null && deportes.Count > 0)
+        {
+            response.Data = _mapper.Map<List<DeportesDto>>(deportes);
+        }
+
+        return response;
+    }
 }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Alta Socio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="altasocio.html">Practica</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="altasocio.html">Alta Socio</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Opciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tablasocio.html">Tabla de socios</a></li>
+                            <li><a class="dropdown-item" href="obrasactivas.html">Obras Activas</a></li>
+                            <li><a class="dropdown-item" href="altaalbanilxobra.html">Albañiles x Obras</a></li>
+                            <li><a class="dropdown-item" href="altaalbanil.html">Alta Albañiles</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1>Alta Socio</h1>
+            </div>
+        </div>
+        <div class="row">
+            <form action="" id="altaSocio">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 my-2">
+                        <input type="email" class="form-control" id="idEmail" name="email" placeholder="Ingresar email">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 my-2">
+                        <input type="text" class="form-control" id="idNombre" name="nombre" placeholder="Ingresar Nombre">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 my-2">
+                        <input type="text" class="form-control" id="idApellido" name="apellido" placeholder="Ingresar Apellido">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 my-2">
+                        <input type="text" class="form-control" id="idDni" name="dni" placeholder="Ingresar DNI">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 my-2">
+                        <select class="form-select" id="idDeporte" name="deporte">
+                            
+                        </select>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 my-2">
+                        <input type="text" class="form-control" id="idTelefono" name="telefono" placeholder="Ingresar Telefono">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 my-2">
+                        <input type="text" class="form-control" id="idCalle" name="calle" placeholder="Ingresar Calle">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 my-2">
+                        <input type="text" class="form-control" id="idNumero" name="numero" placeholder="Ingresar Numero">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 my-2">
+                        <input type="text" class="form-control" id="idCodPostal" name="codPostal" placeholder="Ingresar Codigo Postal">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 my-2">
+                        <input type="text" class="form-control" id="idProvincia" name="provincia" placeholder="Ingresar Provincia">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 my-2">
+                        <input type="text" class="form-control" id="idCiudad" name="ciudad" placeholder="Ingresar Ciudad">
+                    </div>
+                </div>
+            </form>
+            <div class="d-grid gap-2 col-6 mx-auto my-3">
+                <button class="btn" type="button" id="btnRegistrarSocio">Registrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+        integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/altaSocioService.js"></script>
+</body>
+
+</html>

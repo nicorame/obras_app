@@ -19,6 +19,13 @@ public class PrimerController : Controller
         var response = await _serviceUno.GetAll();
         return Ok(response);
     }
+    
+    [HttpGet("/primer/deportes/GetAll")]
+    public async Task<IActionResult> GetAllDeportes()
+    {
+        var response = await _serviceUno.GetAllDeportes();
+        return Ok(response);
+    }
 
     [HttpGet("/primer/GetById/{id}")]
     public async Task<IActionResult> GetById(Guid id)
